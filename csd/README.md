@@ -10,6 +10,7 @@ conda activate mfa
 conda install -c conda-forge montreal-forced-aligner==2.0.6 --yes  # install MFA
 pip install -r requirements.txt  # install other requirements
 ```
+* conda activate mfa가 안되면 source activate mfa
 
 ## 2. Download CSD Segments
 
