@@ -8,9 +8,7 @@ def make_dictionary(asset_dir: str, dic_path: str):
     _dict = {}
     for f in tqdm(os.listdir(asset_dir)):
         if '.lab' in f:
-            print(f)
             sentence = open(f'{asset_dir}/{f}', 'r', encoding='utf-8').readline()
-
             for s in sentence.split(' '):
                 s = s.replace(' ', '')
                 if s != '':
@@ -32,5 +30,7 @@ if __name__ == '__main__':
     if not os.path.exists(dic_path):
         os.makedirs(dic_path)
         
+    print('### start make csd dictionary')
     asset_dir = './assets/segments'
     make_dictionary(asset_dir, dic_path)
+    print('### end make csd dictionary')
