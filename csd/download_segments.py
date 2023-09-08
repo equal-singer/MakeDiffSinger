@@ -32,7 +32,7 @@ if __name__ == '__main__':
         os.makedirs(asset_path)
     
     print('### start download csd segments')
-    url = 'https://github.com/equal-singer/CSD-Dataset/releases/download/diffSinger/segments.zip'
+    url = 'https://github.com/equal-singer/CSD/releases/download/diffSinger/segments.zip'
     download(asset_path, url)
     print('### end download csd segments')
     
